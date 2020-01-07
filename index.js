@@ -5,6 +5,7 @@ function submitData(name, email) {
       };
     
     const configObj = {
+        method: "POST"
         headers: {
           "Content-Type": "application/json",
           "Accept": "application/json"
