@@ -1,7 +1,7 @@
 function submitData(name, email) {
     let formData = {
-        name: name,
-        email: email
+        name: `${name}`,
+        email: `${email}`
       };
     
     const configObj = {
