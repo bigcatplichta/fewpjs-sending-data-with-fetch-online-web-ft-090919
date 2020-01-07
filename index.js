@@ -18,11 +18,11 @@ function submitData(name, email) {
             return response.json();
         })
         .then(function(object) {
-            document.body.innerHTML = object;
+            document.body.innerHTML = object.id;
         })
         .catch(function(error) {
             alert("Most of this code was copy/pasted from the lesson, this should work!");
-            console.log(error.message);
+            document.body.innerHTML = error.message;
         });
         
 }
