@@ -18,10 +18,10 @@ function submitData(name, email) {
             return response.json();
         })
         .then(function(object) {
-            document.body = object;
+            document.body.innerHTML = object;
         })
         .catch(function(error) {
-            alert("Bad things! Ragnarők!");
+            alert("Most of this code was copy/pasted from the lesson, this should work!");
             console.log(error.message);
         });
         
